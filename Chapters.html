@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="Chapters.css" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+        />
+        <title>Chapters</title>
+    </head>
+
+    <body id="body-pd" onload="reloadInitial()">
+        <nav
+            class="navbar navbar-expand-lg navbar-light bg-light border-bottom"
+        >
+            <div class="container-fluid">
+                <div class="header_toggle">
+                    <i class="bx bx-menu hamburger" id="header-toggle"></i>
+                </div>
+                <a class="navbar-brand mx-3" href="#"
+                    ><img
+                        src="https://png.pngtree.com/element_pic/00/16/07/115783931601b5c.jpg"
+                        alt="logo"
+                        width="80px"
+                /></a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item mx-4">
+                            <a
+                                class="nav-link"
+                                aria-current="page"
+                                href="home.html"
+                                >Home</a
+                            >
+                        </li>
+                        <li class="nav-item mx-4">
+                            <a class="nav-link" href="AboutUs.html">About</a>
+                        </li>
+                        <li class="nav-item mx-4">
+                            <a class="nav-link active" href="#">Chapters</a>
+                        </li>
+                        <li class="nav-item mx-4">
+                            <a class="nav-link" href="contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <header class="header" id="header"></header>
+        <div class="l-navbar" id="nav-bar">
+            <nav class="nav">
+                <div>
+                    <a href="#" class="nav_logo">
+                        <i class="bx bx-layer nav_logo-icon"></i>
+                        <span class="nav_logo-name">Chapters</span>
+                    </a>
+                    <div class="nav_list">
+                        <a
+                            href="#"
+                            class="nav_link active"
+                            onClick="loadChapter(1)"
+                        >
+                            1 <span class="nav_name">Chapter-1</span>
+                        </a>
+                        <a href="#" class="nav_link" onClick="loadChapter(2)">
+                            2 <span class="nav_name">Chapter-2</span>
+                        </a>
+                        <a href="#" class="nav_link" onClick="loadChapter(3)">
+                            3 <span class="nav_name">Chapter-3</span>
+                        </a>
+                        <a href="#" class="nav_link" onClick="loadChapter(4)">
+                            4 <span class="nav_name">Chapter-4</span>
+                        </a>
+                        <a href="#" class="nav_link" onClick="loadChapter(5)">
+                            5 <span class="nav_name">Chapter-5</span>
+                        </a>
+                        <a href="#" class="nav_link" onClick="loadChapter(6)">
+                            6 <span class="nav_name">Chapter-6</span>
+                        </a>
+                        <a href="#" class="nav_link" onClick="loadChapter(7)">
+                            7 <span class="nav_name">Chapter-7</span>
+                        </a>
+                        <a href="#" class="nav_link" onClick="loadChapter(8)">
+                            8 <span class="nav_name">Chapter-8</span>
+                        </a>
+                        <a href="#" class="nav_link" onClick="loadChapter(9)">
+                            9 <span class="nav_name">Chapter-9</span>
+                        </a>
+                        <a href="#" class="nav_link" onClick="loadChapter(10)">
+                            10 <span class="nav_name">Chapter-10</span>
+                        </a>
+                        <a href="#" class="nav_link" onClick="loadChapter(11)">
+                            11 <span class="nav_name">Chapter-11</span>
+                        </a>
+                        <a href="#" class="nav_link" onClick="loadChapter(12)">
+                            12 <span class="nav_name">Chapter-12</span>
+                        </a>
+                        <a href="#" class="nav_link" onClick="loadChapter(3)">
+                            13 <span class="nav_name">Chapter-3</span>
+                        </a>
+                        <a href="#" class="nav_link" onClick="loadChapter(14)">
+                            14 <span class="nav_name">Chapter-14</span>
+                        </a>
+                        <a href="#" class="nav_link" onClick="loadChapter(15)">
+                            15 <span class="nav_name">Chapter-15</span>
+                        </a>
+                        <a href="#" class="nav_link" onClick="loadChapter(16)">
+                            16 <span class="nav_name">Chapter-16</span>
+                        </a>
+                    </div>
+                    <!--  <a href="#" class="nav_link"> <i class='bx bx-log-out nav_icon'></i> <span class="nav_name">SignOut</span> </a> -->
+                </div>
+            </nav>
+        </div>
+        <!--Container Main start-->
+        <div
+            class="chapter-container"
+            style="margin: 2vh 0; padding: 0 2vw"
+        ></div>
+        <!--Container Main end-->
+
+        <footer class="text-center text-lg-start bg-light text-muted">
+            <!-- Section: Social media -->
+            <section
+                class="
+                    d-flex
+                    justify-content-center justify-content-lg-between
+                    p-4
+                    border-bottom
+                "
+            >
+                <!-- Left -->
+                <div class="me-5 d-none d-lg-block">
+                    <span>Get connected with us on social networks:</span>
+                </div>
+                <!-- Left -->
+
+                <!-- Right -->
+                <div>
+                    <a href="" class="me-4 text-reset">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="" class="me-4 text-reset">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="" class="me-4 text-reset">
+                        <i class="fab fa-google"></i>
+                    </a>
+                    <a href="" class="me-4 text-reset">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="" class="me-4 text-reset">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="" class="me-4 text-reset">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+                <!-- Right -->
+            </section>
+            <!-- Section: Social media -->
+
+            <!-- Section: Links  -->
+            <section class="">
+                <div class="container text-center text-md-start mt-5">
+                    <!-- Grid row -->
+                    <div class="row mt-3">
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                            <!-- Content -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                <i class="fas fa-gem me-3"></i>Company name
+                            </h6>
+                            <p>
+                                Here you can use rows and columns to organize
+                                your footer content. Lorem ipsum dolor sit amet,
+                                consectetur adipisicing elit.
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                Chapters
+                            </h6>
+                            <p>
+                                <a href="#!" class="text-reset">Chapter-1</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Chapter-2</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Chapter-3</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Chapter-4</a>
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                Popular Chapters
+                            </h6>
+                            <p>
+                                <a href="#!" class="text-reset">Chapter-X</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Chapter-Y</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Chapter-Z</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Chapter-Q</a>
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div
+                            class="
+                                col-md-4 col-lg-3 col-xl-3
+                                mx-auto
+                                mb-md-0 mb-4
+                            "
+                        >
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                            <p>
+                                <i class="fas fa-home me-3"></i> New York, NY
+                                10012, US
+                            </p>
+                            <p>
+                                <i class="fas fa-envelope me-3"></i>
+                                info@example.com
+                            </p>
+                            <p>
+                                <i class="fas fa-phone me-3"></i> +91 9999999999
+                            </p>
+                            <p>
+                                <i class="fas fa-print me-3"></i> +91 9999999999
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+                    </div>
+                    <!-- Grid row -->
+                </div>
+            </section>
+            <!-- Section: Links  -->
+
+            <!-- Copyright -->
+            <div
+                class="text-center p-4"
+                style="background-color: rgba(0, 0, 0, 0.05)"
+            >
+                © 2021 Copyright:
+                <a class="text-reset fw-bold" href="#">Kode IT</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
+        <script>
+            function reloadInitial() {
+                const chapter = document.querySelector(".chapter-container");
+                const local = localStorage.getItem("Chapters");
+                if (!local) {
+                    chapter.innerHTML = `<h2>Chapter-1</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem
+                libero architecto deserunt voluptatem nesciunt aliquam perspiciatis
+                doloribus, similique vero excepturi sapiente repellendus maxime
+                placeat maiores tenetur ipsum neque. Natus, quo molestiae. Eaque
+                officia dolorem ea aliquid. Impedit exercitationem sit dolorem
+                voluptatibus, aliquid rem repellat debitis at quae placeat
+                perferendis dicta aut consequatur aperiam modi asperiores atque unde
+                amet. Commodi aliquam laboriosam placeat, totam officia velit esse
+                quae, perspiciatis animi, provident perferendis est non rem enim
+                fuga quod officiis maiores eos sunt. Qui repellat repellendus quas.
+                Omnis eveniet culpa eius itaque recusandae sequi maiores reiciendis
+                eaque. Quisquam officiis maxime magni doloribus illum dolore nam
+                voluptas soluta ea enim! Iure reprehenderit et, odit rerum
+                cupiditate quibusdam asperiores eius nemo, facilis ducimus quis nisi
+                laudantium deleniti dolor eveniet. Placeat, incidunt quam ut ipsum,
+                quaerat soluta, veritatis assumenda dolorum neque atque in quia
+                voluptates molestias minima saepe. Consequatur porro mollitia eius
+                delectus aperiam dolor laborum consequuntur magni consectetur? Earum
+                ducimus, odio animi, dolorem unde fuga tempora, error obcaecati vel
+                rerum natus dolor tempore. Numquam, necessitatibus fuga cupiditate
+                aut asperiores repudiandae culpa voluptatem earum delectus hic nisi
+                expedita obcaecati nemo itaque laboriosam magnam aspernatur deleniti
+                aperiam non, quia nulla ducimus. At dolorem sint earum quisquam
+                repudiandae! Quas totam exercitationem rerum quaerat dolorem animi
+                placeat, ipsam amet temporibus deserunt ipsa sunt enim illum soluta
+                inventore laborum consequatur odit culpa autem, repellendus
+                repudiandae dolores? Alias, pariatur deleniti, maiores at fugiat
+                praesentium quas sunt repellendus eos in quisquam ut, fugit aliquid
+                nostrum aliquam hic nemo perspiciatis aut facere sint laudantium
+                consequatur iure odio. Nostrum aut, ad aspernatur ut non placeat
+                quis totam voluptatem nemo doloremque rem distinctio perferendis
+                laboriosam tenetur voluptates expedita soluta quisquam dolore
+                veritatis eaque illum dolores id, blanditiis officiis! Tempore atque
+                nam optio voluptas, aspernatur quas aliquam debitis quos quasi
+                doloremque soluta? Cumque, aperiam repudiandae consequatur non porro
+                esse ipsa sequi laudantium molestiae reiciendis, illo sit quas totam
+                tenetur quis! Adipisci fugiat perspiciatis commodi reprehenderit
+                aliquam molestiae iure sunt illo facilis distinctio, dolorum
+                inventore maxime dicta et ipsum unde eos ad? Nihil, porro dolore
+                saepe officiis ipsum, amet labore ea quas totam est minima possimus
+                veritatis eligendi! Nisi iusto omnis perspiciatis qui ipsam voluptas
+                sapiente commodi nostrum impedit dolorem ea voluptatum vitae
+                praesentium veritatis rerum at voluptatem ipsa ipsum, laboriosam
+                dolor. Voluptatibus sit dignissimos delectus. Dolores modi,
+                similique laboriosam enim eum alias fugit iste in dignissimos ipsum
+                harum. Vel blanditiis et quas illum nam ipsa mollitia eos magni
+                expedita voluptate dolor, illo sapiente. Odio obcaecati harum
+                accusamus perferendis, non nam maiores accusantium quia ex debitis
+                numquam voluptatibus repellendus dolores quisquam sed aut et sunt
+                eum laudantium, alias maxime cum magni! Ex soluta ullam aliquam aut,
+                quisquam reprehenderit inventore error hic repellendus deleniti
+                minus labore perferendis. Deleniti voluptas aut pariatur iure
+                eligendi consectetur, harum cum labore dolores dicta natus eius
+                dignissimos dolorem voluptatem quisquam tempora itaque animi
+                officiis laboriosam necessitatibus impedit architecto rerum,
+                accusamus libero. In ad cumque laudantium beatae quod libero natus
+                deleniti doloribus similique placeat! Dicta reiciendis nulla
+                possimus eum corrupti. Ad, architecto delectus.</p>`;
+                } else {
+                    let localChap = JSON.parse(local);
+                    chapter.innerHTML = localChap.chapterValue;
+                }
+            }
+
+            function loadChapter(n) {
+                const content = `<h2>Chapter-${n}</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem
+            libero architecto deserunt voluptatem nesciunt aliquam perspiciatis
+            doloribus, similique vero excepturi sapiente repellendus maxime
+            placeat maiores tenetur ipsum neque. Natus, quo molestiae. Eaque
+            officia dolorem ea aliquid. Impedit exercitationem sit dolorem
+            voluptatibus, aliquid rem repellat debitis at quae placeat
+            perferendis dicta aut consequatur aperiam modi asperiores atque unde
+            amet. Commodi aliquam laboriosam placeat, totam officia velit esse
+            quae, perspiciatis animi, provident perferendis est non rem enim
+            fuga quod officiis maiores eos sunt. Qui repellat repellendus quas.
+            Omnis eveniet culpa eius itaque recusandae sequi maiores reiciendis
+            eaque. Quisquam officiis maxime magni doloribus illum dolore nam
+            voluptas soluta ea enim! Iure reprehenderit et, odit rerum
+            cupiditate quibusdam asperiores eius nemo, facilis ducimus quis nisi
+            laudantium deleniti dolor eveniet. Placeat, incidunt quam ut ipsum,
+            quaerat soluta, veritatis assumenda dolorum neque atque in quia
+            voluptates molestias minima saepe. Consequatur porro mollitia eius
+            delectus aperiam dolor laborum consequuntur magni consectetur? Earum
+            ducimus, odio animi, dolorem unde fuga tempora, error obcaecati vel
+            rerum natus dolor tempore. Numquam, necessitatibus fuga cupiditate
+            aut asperiores repudiandae culpa voluptatem earum delectus hic nisi
+            expedita obcaecati nemo itaque laboriosam magnam aspernatur deleniti
+            aperiam non, quia nulla ducimus. At dolorem sint earum quisquam
+            repudiandae! Quas totam exercitationem rerum quaerat dolorem animi
+            placeat, ipsam amet temporibus deserunt ipsa sunt enim illum soluta
+            inventore laborum consequatur odit culpa autem, repellendus
+            repudiandae dolores? Alias, pariatur deleniti, maiores at fugiat
+            praesentium quas sunt repellendus eos in quisquam ut, fugit aliquid
+            nostrum aliquam hic nemo perspiciatis aut facere sint laudantium
+            consequatur iure odio. Nostrum aut, ad aspernatur ut non placeat
+            quis totam voluptatem nemo doloremque rem distinctio perferendis
+            laboriosam tenetur voluptates expedita soluta quisquam dolore
+            veritatis eaque illum dolores id, blanditiis officiis! Tempore atque
+            nam optio voluptas, aspernatur quas aliquam debitis quos quasi
+            doloremque soluta? Cumque, aperiam repudiandae consequatur non porro
+            esse ipsa sequi laudantium molestiae reiciendis, illo sit quas totam
+            tenetur quis! Adipisci fugiat perspiciatis commodi reprehenderit
+            aliquam molestiae iure sunt illo facilis distinctio, dolorum
+            inventore maxime dicta et ipsum unde eos ad? Nihil, porro dolore
+            saepe officiis ipsum, amet labore ea quas totam est minima possimus
+            veritatis eligendi! Nisi iusto omnis perspiciatis qui ipsam voluptas
+            sapiente commodi nostrum impedit dolorem ea voluptatum vitae
+            praesentium veritatis rerum at voluptatem ipsa ipsum, laboriosam
+            dolor. Voluptatibus sit dignissimos delectus. Dolores modi,
+            similique laboriosam enim eum alias fugit iste in dignissimos ipsum
+            harum. Vel blanditiis et quas illum nam ipsa mollitia eos magni
+            expedita voluptate dolor, illo sapiente. Odio obcaecati harum
+            accusamus perferendis, non nam maiores accusantium quia ex debitis
+            numquam voluptatibus repellendus dolores quisquam sed aut et sunt
+            eum laudantium, alias maxime cum magni! Ex soluta ullam aliquam aut,
+            quisquam reprehenderit inventore error hic repellendus deleniti
+            minus labore perferendis. Deleniti voluptas aut pariatur iure
+            eligendi consectetur, harum cum labore dolores dicta natus eius
+            dignissimos dolorem voluptatem quisquam tempora itaque animi
+            officiis laboriosam necessitatibus impedit architecto rerum,
+            accusamus libero. In ad cumque laudantium beatae quod libero natus
+            deleniti doloribus similique placeat! Dicta reiciendis nulla
+            possimus eum corrupti. Ad, architecto delectus.</p>`;
+                localStorage.setItem(
+                    "Chapters",
+                    JSON.stringify({ chapterValue: content })
+                );
+                const chapter = document.querySelector(".chapter-container");
+                chapter.innerHTML = content;
+            }
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="Chapters.js"></script>
+    </body>
+</html>
